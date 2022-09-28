@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="book_icon.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <nav>
+      <div>
+        <h3>Awesome Books</h3>
+      </div>
+      <div>
+        <ul class="nav-list">
+          <li class="list-btn">
+            <a class="list-color" href="#book-list">List</a>
+          </li>
+          <li class="vector">|</li>
+          <li class="add-new-btn">
+            <a class="add-color" href="#add-book-form">Add new</a>
+          </li>
+          <li class="vector">|</li>
+          <li class="contact-btn">
+            <a class="contact-color" href="#contact-info">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="date"></div>
+
+    <main>
+      <section class="book-list">
+        <header>
+          <h1>All awesome books</h1>
+        </header>
+        <div class="books"></div>
+      </section>
+      <section class="add-book-form hide">
+        <h2>Add a new book</h2>
+        <form class="form" id="add-book-form">
+          <input
+            class="input-field"
+            type="text"
+            placeholder="Title"
+            id="title"
+            required
+          />
+          <br />
+          <input
+            class="input-field"
+            type="text"
+            placeholder="Author"
+            id="author"
+            required
+          />
+          <br />
+          <input class="input-field" type="submit" value="Add" id="add-btn" />
+        </form>
+      </section>
+      <section class="contact-info hide" id="contact-info">
+        <header>
+          <h2>Contact Information</h2>
+        </header>
+        <p>
+          Do you have any questions or you just want to say "Hello"? <br />
+          You can reach out to us!
+        </p>
+        <ul>
+          <li>Our email: mail@mail.com</li>
+          <li>Our phone number: 0043572635372876</li>
+          <li>Our address: MainStreet, 22 Avenue, City, Country.</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright ...</p>
+    </footer>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
