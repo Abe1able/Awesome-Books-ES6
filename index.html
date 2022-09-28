@@ -6,30 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Awesome Books</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="book_icon.svg" type="image/x-icon" />
   </head>
   <body>
-    <header>
-      <nav>
-        <div>
-          <h3>Awesome Books</h3>
-        </div>
-        <div>
-          <ul class="nav-list">
-            <li class="list-btn"><a class="list-color" href="#book-list">List</a></li>
-            <li class="vector"></li>
-            <li class="add-new-btn"><a class="add-color"  href="#add-book-form">Add new</a></li>
-            <li class="vector"></li>
-            <li class="contact-btn"><a class="contact-color"  href="#contact-info">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="date"></div>
-    </header>
-      
-    <main>  
-      <div class="books"></div>
+    <nav>
+      <div>
+        <h3>Awesome Books</h3>
+      </div>
+      <div>
+        <ul class="nav-list">
+          <li class="list-btn">
+            <a class="list-color" href="#book-list">List</a>
+          </li>
+          <li class="vector">|</li>
+          <li class="add-new-btn">
+            <a class="add-color" href="#add-book-form">Add new</a>
+          </li>
+          <li class="vector">|</li>
+          <li class="contact-btn">
+            <a class="contact-color" href="#contact-info">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="date"></div>
+
+    <main>
+      <section class="book-list">
+        <header>
+          <h1>All awesome books</h1>
+        </header>
+        <div class="books"></div>
+      </section>
       <section class="add-book-form hide">
-          <h2>Add a new book</h2>
+        <h2>Add a new book</h2>
         <form class="form" id="add-book-form">
           <input
             class="input-field"
@@ -68,6 +78,6 @@
     <footer>
       <p>Copyright ...</p>
     </footer>
-    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
   </body>
 </html>

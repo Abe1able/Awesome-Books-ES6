@@ -13,7 +13,11 @@
     text-align: center;
   }
   
-  h1,
+  h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  
   h2 {
     font-size: 32px;
   }
@@ -49,6 +53,10 @@
     display: flex;
     justify-content: end;
     margin: 0 10px 100px 10px;
+  }
+  
+  .books {
+    border: 3px solid #000;
   }
   
   .book-item {
