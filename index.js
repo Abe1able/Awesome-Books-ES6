@@ -2,7 +2,7 @@ import BookObj from './modules/bookObj.js';
 import displaySavedBooks from './modules/displaySavedBooks.js';
 import addBookToDom from './modules/addBookToDom.js';
 import Listeners from './modules/topNavListeners.js';
-import {DateTime} from './modules/luxon.min.js';
+import { DateTime } from './modules/luxon.min.js';
 
 const form = document.querySelector ('form');
 const dateTimeDiv = document.querySelector ('.date');
@@ -45,8 +45,10 @@ onload = () => {
     displaySavedBooks ();
   }
 
-  setInterval (() => {
-    dateTimeDiv.innerHTML = DateTime.now ();
-  }, 1000);
-  console.log(DateTime.now());
 };
+
+document.addEventListener('DOMContentLoaded', () => {
+   // const { DateTime } = luxon;
+    const now = DateTime.now();
+    dateTimeDiv.innerHTML = now.toLocaleString(DateTime.DATETIME_MED);
+  });
